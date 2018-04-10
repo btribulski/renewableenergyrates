@@ -1,0 +1,29 @@
+uuid: dfad865b-4f8d-4378-9f1d-e8f3ce1a55f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_operator
+    - node.type.operator
+    - node.type.power_plant
+id: node.power_plant.field_operator
+field_name: field_operator
+entity_type: node
+bundle: power_plant
+label: Operator
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      operator: operator
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

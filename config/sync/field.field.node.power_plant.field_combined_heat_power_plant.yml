@@ -1,0 +1,19 @@
+uuid: 297128b1-78aa-4402-a5f5-4fbe44541f97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_combined_heat_power_plant
+    - node.type.power_plant
+id: node.power_plant.field_combined_heat_power_plant
+field_name: field_combined_heat_power_plant
+entity_type: node
+bundle: power_plant
+label: 'Combined Heat & Power Plant'
+description: 'Whether or not the plant is a combined heat & power facility (cogenerator).One character alphanumeric, “Y” or “N”'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

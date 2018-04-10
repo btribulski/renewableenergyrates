@@ -1,0 +1,23 @@
+uuid: f5aad33a-f920-4d51-9f24-38b8afdaedd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plant_id
+    - node.type.power_plant
+id: node.power_plant.field_plant_id
+field_name: field_plant_id
+entity_type: node
+bundle: power_plant
+label: 'Plant Id'
+description: 'EIA Plant Identification number. One to five digit numeric.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

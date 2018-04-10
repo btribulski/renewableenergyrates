@@ -1,0 +1,20 @@
+uuid: 0bac739b-3b8a-469f-bb7a-e6e750ae39f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_naics_code
+field_name: field_naics_code
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

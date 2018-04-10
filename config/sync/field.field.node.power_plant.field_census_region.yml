@@ -1,0 +1,21 @@
+uuid: c7e30f26-02f8-49bc-bfbc-c0b9d17d9c82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_census_region
+    - node.type.power_plant
+  module:
+    - options
+id: node.power_plant.field_census_region
+field_name: field_census_region
+entity_type: node
+bundle: power_plant
+label: 'Census Region'
+description: 'The census region the state is located in.Three to five character alphanumeric:'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: 5650d372-53dc-47cc-86a9-0874f064c838
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aer_fuel_type
+    - node.type.generator
+  module:
+    - options
+id: node.generator.field_aer_fuel_type
+field_name: field_aer_fuel_type
+entity_type: node
+bundle: generator
+label: 'AER Fuel Type'
+description: 'A partial aggregation of the reported fuel type codes into larger categories used by EIA in, for example, the Annual Energy Review (AER).Two or three letter alphanumeric.  See the Fuel Code table (Table 5), below:'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

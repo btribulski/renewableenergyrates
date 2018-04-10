@@ -1,0 +1,21 @@
+uuid: 1e096e35-5df9-4f28-b2a2-a8763fd3f116
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reported_fuel_type
+    - node.type.generator
+  module:
+    - options
+id: node.generator.field_reported_fuel_type
+field_name: field_reported_fuel_type
+entity_type: node
+bundle: generator
+label: 'Reported Fuel Type'
+description: 'The fuel code reported to EIA.Two or three letter alphanumeric:'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,141 @@
+uuid: c464f407-4897-403d-a60d-1bca85da3acc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_reported_fuel_type
+field_name: field_reported_fuel_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: AB
+      label: 'Agricultural By-Products'
+    -
+      value: ANT
+      label: 'Anthracite Coal'
+    -
+      value: BFG
+      label: 'Blast Furnace Gas'
+    -
+      value: BIT
+      label: 'Bituminous Coal'
+    -
+      value: BLQ
+      label: 'Black Liquor'
+    -
+      value: DFO
+      label: 'Distillate Fuel Oil. Including diesel, No. 1, No. 2, and No. 4 fuel oils.'
+    -
+      value: GEO
+      label: Geothermal
+    -
+      value: JF
+      label: 'Jet Fuel'
+    -
+      value: KER
+      label: Kerosene
+    -
+      value: LFG
+      label: 'Landfill Gas'
+    -
+      value: LIG
+      label: 'Lignite Coal'
+    -
+      value: MSB
+      label: 'Biogenic Municipal Solid Waste'
+    -
+      value: MSN
+      label: 'Non-biogenic Municipal Solid Waste'
+    -
+      value: MWH
+      label: 'Electricity used for energy storage'
+    -
+      value: NG
+      label: 'Natural Gas'
+    -
+      value: NUC
+      label: 'Nuclear. Including Uranium, Plutonium, and Thorium.'
+    -
+      value: OBG
+      label: 'Other Biomass Gas. Including digester gas, methane, and other biomass gases.'
+    -
+      value: OBL
+      label: 'Other Biomass Liquids'
+    -
+      value: OBS
+      label: 'Other Biomass Solids'
+    -
+      value: OG
+      label: 'Other Gas'
+    -
+      value: OTH
+      label: 'Other Fuel'
+    -
+      value: PC
+      label: 'Petroleum Coke'
+    -
+      value: PG
+      label: 'Gaseous Propane'
+    -
+      value: PUR
+      label: 'Purchased Steam'
+    -
+      value: RC
+      label: 'Refined Coal'
+    -
+      value: RFO
+      label: 'Residual Fuel Oil. Including No. 5 & 6 fuel oils and bunker C fuel oil.'
+    -
+      value: SC
+      label: 'Coal-based Synfuel. Including briquettes, pellets, or extrusions, which are formed by binding materials or processes that recycle materials.'
+    -
+      value: SGC
+      label: 'Coal-Derived Synthesis Gas'
+    -
+      value: SGP
+      label: 'Synthesis Gas from Petroleum Coke'
+    -
+      value: SLW
+      label: 'Sludge Waste'
+    -
+      value: SUB
+      label: 'Subbituminous Coal'
+    -
+      value: SUN
+      label: Solar
+    -
+      value: TDF
+      label: 'Tire-derived Fuels'
+    -
+      value: WAT
+      label: 'Water at a Conventional Hydroelectric Turbine and water used in Wave Buoy Hydrokinetic Technology, current Hydrokinetic Technology, Tidal Hydrokinetic Technology, and Pumping Energy for Reversible (Pumped Storage) Hydroelectric Turbines.'
+    -
+      value: WC
+      label: 'Waste/Other Coal. Including anthracite culm, bituminous gob, fine coal, lignite waste, waste coal.'
+    -
+      value: WDL
+      label: 'Wood Waste Liquids, excluding Black Liquor. Including red liquor, sludge wood, spent sulfite liquor, and other wood-based liquids.'
+    -
+      value: WDS
+      label: 'Wood/Wood Waste Solids. Including paper pellets, railroad ties, utility polies, wood chips, bark, and other wood waste solids.'
+    -
+      value: WH
+      label: 'Waste Heat not directly attributed to a fuel source'
+    -
+      value: WND
+      label: Wind
+    -
+      value: WO
+      label: 'Waste/Other Oil. Including crude oil, liquid butane, liquid propane, naphtha, oil waste, re-refined moto oil, sludge oil, tar oil, or other petroleum-based liquid wastes.'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

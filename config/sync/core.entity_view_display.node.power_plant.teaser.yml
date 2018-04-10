@@ -1,0 +1,30 @@
+uuid: 435ca8ae-5e3d-4536-8c28-ff59edcc92d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.power_plant.body
+    - node.type.power_plant
+  module:
+    - text
+    - user
+id: node.power_plant.teaser
+targetEntityType: node
+bundle: power_plant
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_combined_heat_power_plant: true
+  field_nuclear_unit_id: true

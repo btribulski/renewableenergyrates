@@ -1,0 +1,19 @@
+uuid: 22cc86a0-998c-447f-9cd3-37ebab4e73d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plant_name
+    - node.type.power_plant
+id: node.power_plant.field_plant_name
+field_name: field_plant_name
+entity_type: node
+bundle: power_plant
+label: 'Plant Name'
+description: 'Plant name. Alpanumeric'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

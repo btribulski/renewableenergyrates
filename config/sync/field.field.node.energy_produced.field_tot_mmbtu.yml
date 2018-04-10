@@ -1,0 +1,23 @@
+uuid: dcc8d28a-1168-4e57-bfa4-c4ee80adb72f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tot_mmbtu
+    - node.type.energy_produced
+id: node.energy_produced.field_tot_mmbtu
+field_name: field_tot_mmbtu
+entity_type: node
+bundle: energy_produced
+label: 'Total consumption of the fuel'
+description: 'Total consumption of the fuel in millions of Btus.Numeric   Note: this is the total quantity consumed for both electricity and, in the case of combined heat and power plants, process steam production.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,23 @@
+uuid: ab1d383c-9c78-4b78-9a9c-d38e26e6ac4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_elec_mmbtus
+    - node.type.energy_produced
+id: node.energy_produced.field_elec_mmbtus
+field_name: field_elec_mmbtus
+entity_type: node
+bundle: energy_produced
+label: 'Consumption of fuel for generating electricity'
+description: 'Consumption of fuel in millions of Btus for the purpose of generating electricity.These fields are most relevant to combined heat and power plants.  For non-combined heat and power plants, the data in these fields and in columns AK through AV (total fuel consumed) will be identical.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

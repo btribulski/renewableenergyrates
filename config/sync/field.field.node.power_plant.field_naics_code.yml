@@ -1,0 +1,23 @@
+uuid: 1e5ac10a-a7e3-4678-9891-1a289ca61d36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_naics_code
+    - node.type.power_plant
+id: node.power_plant.field_naics_code
+field_name: field_naics_code
+entity_type: node
+bundle: power_plant
+label: 'NAICS Code'
+description: 'The facility’s North American Industrial Classification System (NAICS) code.Numeric. For information on the NAICS system, see:http://www.census.gov/epcd/www/naics.html'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

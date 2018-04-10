@@ -1,0 +1,23 @@
+uuid: ceec4a3a-41b1-4a45-9b0d-448bb7d5b0f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quantity
+    - node.type.energy_produced
+id: node.energy_produced.field_quantity
+field_name: field_quantity
+entity_type: node
+bundle: energy_produced
+label: Quantity
+description: 'Consumption of the fuel type in physical units.Numeric.  Note: this is the total quantity consumed for both electricity and, in the case of combined heat and power plants, process steam production.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,59 @@
+uuid: 1b214b55-0349-4001-995f-e982da8682c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.generator.body
+    - field.field.node.generator.field_aer_fuel_type
+    - field.field.node.generator.field_physical_unit_label
+    - field.field.node.generator.field_prime_mover
+    - field.field.node.generator.field_reported_fuel_type
+    - node.type.generator
+  module:
+    - options
+    - text
+    - user
+id: node.generator.default
+targetEntityType: node
+bundle: generator
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_aer_fuel_type:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_physical_unit_label:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_prime_mover:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_reported_fuel_type:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,23 @@
+uuid: 545c932b-8950-44e5-9120-4d94d4cbde7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nuclear_unit_id
+    - node.type.power_plant
+id: node.power_plant.field_nuclear_unit_id
+field_name: field_nuclear_unit_id
+entity_type: node
+bundle: power_plant
+label: 'Nuclear Unit ID'
+description: 'For nuclear plants only, the unit number .One digit numeric. Nuclear plants are the only type of plants for which data are shown explicitly at the generating unit level.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

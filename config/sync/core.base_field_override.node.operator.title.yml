@@ -1,0 +1,18 @@
+uuid: f4287272-6433-4abc-a433-67a81fef2853
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.operator
+id: node.operator.title
+field_name: title
+entity_type: node
+bundle: operator
+label: 'Operator Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

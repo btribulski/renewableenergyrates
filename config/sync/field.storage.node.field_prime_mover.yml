@@ -1,0 +1,87 @@
+uuid: 62ca186e-6d0d-40f9-beba-8690be39a629
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_prime_mover
+field_name: field_prime_mover
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: BA
+      label: 'Energy Storage, Battery'
+    -
+      value: BT
+      label: 'Turbines Used in a Binary Cycle. Including those used for geothermal applications'
+    -
+      value: CA
+      label: 'Combined-Cycle -- Steam Part'
+    -
+      value: CE
+      label: 'Energy Storage, Compressed Air'
+    -
+      value: CP
+      label: 'Energy Storage, Concentrated Solar Power'
+    -
+      value: CS
+      label: 'Combined-Cycle Single-Shaft Combustion Turbine and Steam Turbine share of single generator'
+    -
+      value: CT
+      label: 'Combined-Cycle Combustion Turbine Part'
+    -
+      value: ES
+      label: 'Energy Storage, Other (Specify on Schedule 9, Comments)'
+    -
+      value: FC
+      label: 'Fuel Cell'
+    -
+      value: FW
+      label: 'Energy Storage, Flywheel'
+    -
+      value: GT
+      label: 'Combustion (Gas) Turbine. Including Jet Engine design'
+    -
+      value: HA
+      label: 'Hydrokinetic, Axial Flow Turbine'
+    -
+      value: HB
+      label: 'Hydrokinetic, Wave Buoy'
+    -
+      value: HK
+      label: 'Hydrokinetic, Other'
+    -
+      value: HY
+      label: 'Hydraulic Turbine. Including turbines associated with delivery of water by pipeline.'
+    -
+      value: IC
+      label: 'Internal Combustion (diesel, piston, reciprocating) Engine'
+    -
+      value: PS
+      label: 'Energy Storage, Reversible Hydraulic Turbine (Pumped Storage)'
+    -
+      value: OT
+      label: Other
+    -
+      value: ST
+      label: 'Steam Turbine. Including Nuclear, Geothermal, and Solar Steam (does not include Combined Cycle).'
+    -
+      value: PV
+      label: Photovoltaic
+    -
+      value: WT
+      label: 'Wind Turbine, Onshore'
+    -
+      value: WS
+      label: 'Wind Turbine, Offshore'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

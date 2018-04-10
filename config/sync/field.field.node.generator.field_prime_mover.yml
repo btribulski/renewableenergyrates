@@ -1,0 +1,21 @@
+uuid: 5bc8bd8f-8f04-4165-99a5-bded8590677f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prime_mover
+    - node.type.generator
+  module:
+    - options
+id: node.generator.field_prime_mover
+field_name: field_prime_mover
+entity_type: node
+bundle: generator
+label: 'Prime Mover'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

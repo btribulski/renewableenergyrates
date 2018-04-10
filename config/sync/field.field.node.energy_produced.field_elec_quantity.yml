@@ -1,0 +1,23 @@
+uuid: 184c746e-d924-465b-a525-4ca59440d5ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_elec_quantity
+    - node.type.energy_produced
+id: node.energy_produced.field_elec_quantity
+field_name: field_elec_quantity
+entity_type: node
+bundle: energy_produced
+label: 'Quantity for electric generation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

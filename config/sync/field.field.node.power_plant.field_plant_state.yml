@@ -1,0 +1,19 @@
+uuid: 11165491-0cfe-4a36-abaf-feca575a91c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plant_state
+    - node.type.power_plant
+id: node.power_plant.field_plant_state
+field_name: field_plant_state
+entity_type: node
+bundle: power_plant
+label: 'Plant State'
+description: 'State the facility is located in. Two character alphanumeric (standard state postal codes).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

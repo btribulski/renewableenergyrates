@@ -1,0 +1,51 @@
+uuid: 8a160452-8c62-4ac5-941b-d33066fbcb4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_census_region
+field_name: field_census_region
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: NEW
+      label: 'New England'
+    -
+      value: MAT
+      label: 'Middle Atlantic'
+    -
+      value: SAT
+      label: 'South Atlantic'
+    -
+      value: ESC
+      label: 'East South Central'
+    -
+      value: WSC
+      label: 'West South Central'
+    -
+      value: ENC
+      label: 'East North Central'
+    -
+      value: WNC
+      label: 'West North Central'
+    -
+      value: MTN
+      label: Mountain
+    -
+      value: PACC
+      label: 'Pacific Contiguous (Oregon, Washington, and California)'
+    -
+      value: PACN
+      label: 'Pacific Non-Contiguous (Alaska and Hawaii)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

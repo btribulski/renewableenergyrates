@@ -1,0 +1,45 @@
+uuid: 7486158a-44f9-46f9-aaa4-84b30853a6e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_nerc_region
+field_name: field_nerc_region
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: NPCC
+      label: 'Northeast Power Coordinating Council'
+    -
+      value: MRO
+      label: 'Midwest Reliability Organization'
+    -
+      value: SERC
+      label: 'SERC Reliability Corporation'
+    -
+      value: RFC
+      label: 'Reliability First Corporation'
+    -
+      value: SPP
+      label: 'Southwest Power Pool'
+    -
+      value: TRE
+      label: 'Texas Regional Entity'
+    -
+      value: FRCC
+      label: 'Florida Reliability Coordinating Council'
+    -
+      value: WECC
+      label: 'Western Electricity Coordinating Council'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

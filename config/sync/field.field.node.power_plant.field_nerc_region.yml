@@ -1,0 +1,21 @@
+uuid: e677a46c-9586-4510-bedc-5cc945ece4cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nerc_region
+    - node.type.power_plant
+  module:
+    - options
+id: node.power_plant.field_nerc_region
+field_name: field_nerc_region
+entity_type: node
+bundle: power_plant
+label: 'NERC Region'
+description: 'The North American Electric Reliability Council (NERC) region where the plant is located.Alphanumeric:'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

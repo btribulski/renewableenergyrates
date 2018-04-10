@@ -1,0 +1,22 @@
+uuid: d9584277-2eb5-4eea-877e-1f27ecd4a3a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.power_plant
+  module:
+    - text
+id: node.power_plant.body
+field_name: body
+entity_type: node
+bundle: power_plant
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

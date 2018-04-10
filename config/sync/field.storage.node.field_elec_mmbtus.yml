@@ -1,0 +1,20 @@
+uuid: d6452d65-4ca6-461c-8a27-2157290fb0c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_elec_mmbtus
+field_name: field_elec_mmbtus
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

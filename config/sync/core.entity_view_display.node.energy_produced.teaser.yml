@@ -1,0 +1,28 @@
+uuid: d04e880c-8ec1-4122-83e2-950d12fdcde6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.energy_produced.body
+    - node.type.energy_produced
+  module:
+    - text
+    - user
+id: node.energy_produced.teaser
+targetEntityType: node
+bundle: energy_produced
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

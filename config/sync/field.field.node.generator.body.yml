@@ -1,0 +1,22 @@
+uuid: f94c1e94-ab27-40a2-abde-7925caec2f0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.generator
+  module:
+    - text
+id: node.generator.body
+field_name: body
+entity_type: node
+bundle: generator
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,19 @@
+uuid: 03261b61-eade-429d-972b-2d1507528ce7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_operator_id
+    - node.type.operator
+id: node.operator.field_operator_id
+field_name: field_operator_id
+entity_type: node
+bundle: operator
+label: 'Operator ID'
+description: 'The EIA operator identification number. Five digit numeric, padded with leading zeros.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

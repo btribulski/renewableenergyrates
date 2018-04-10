@@ -1,0 +1,42 @@
+uuid: 31fdde6e-b5a7-450b-abb4-41204f010e8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_eia_sector
+field_name: field_eia_sector
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Electric Utility: Traditional regulated electric utilities'
+    -
+      value: '2'
+      label: 'NAICS-22 Non-Cogen: Independent power producers which are not cogenerators'
+    -
+      value: '3'
+      label: 'NAICS-22 Cogen: Independent power producers which are cogenerators, but whose primary business purpose is the sale of electricity to the public'
+    -
+      value: '4'
+      label: 'Commercial NAICS Non-Cogen: Commercial non-cogeneration facilities that produce electric power, are connected to the gird, and can sell power to the public'
+    -
+      value: '5'
+      label: 'Commercial NAICS Cogen: Commercial cogeneration facilities that produce electric power, are connected to the grid, and can sell power to the public'
+    -
+      value: '6'
+      label: 'Industrial NAICS Non-Cogen: Industrial non-cogeneration facilities that produce electric power, are connected to the gird, and can sell power to the public'
+    -
+      value: '7'
+      label: 'Industrial NAICS Cogen: Industrial cogeneration facilities that produce electric power, are connected to the gird, and can sell power to the public'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

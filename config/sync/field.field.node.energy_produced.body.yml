@@ -1,0 +1,22 @@
+uuid: 9cdcd1ae-f7ab-4c2b-8f06-05e0526f5aab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.energy_produced
+  module:
+    - text
+id: node.energy_produced.body
+field_name: body
+entity_type: node
+bundle: energy_produced
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

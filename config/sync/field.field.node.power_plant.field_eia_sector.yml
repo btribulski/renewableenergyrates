@@ -1,0 +1,21 @@
+uuid: 4672cd7f-b2ce-40b0-ac78-4bcfd4c82f0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eia_sector
+    - node.type.power_plant
+  module:
+    - options
+id: node.power_plant.field_eia_sector
+field_name: field_eia_sector
+entity_type: node
+bundle: power_plant
+label: 'EIA Sector'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,75 @@
+uuid: 1a3e13a8-4c2d-43bf-bc26-fffdd12e7a61
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_aer_fuel_type
+field_name: field_aer_fuel_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: SUN
+      label: 'Solar PV and thermal'
+    -
+      value: COL
+      label: Coal
+    -
+      value: DFO
+      label: 'Distillate Petroleum'
+    -
+      value: GEO
+      label: Geothermal
+    -
+      value: HPS
+      label: 'Hydroelectric Pumped Storage'
+    -
+      value: HYC
+      label: 'Hydroelectric Conventional'
+    -
+      value: MLG
+      label: 'Biogenic Municipal Solid Waste and Landfill Gas'
+    -
+      value: NG
+      label: 'Natural Gas'
+    -
+      value: NUC
+      label: Nuclear
+    -
+      value: OOG
+      label: 'Other Gases'
+    -
+      value: ORW
+      label: 'Other Renewables'
+    -
+      value: OTH
+      label: 'Other (including nonbiogenic MSW)'
+    -
+      value: PC
+      label: 'Petroleum Coke'
+    -
+      value: RFO
+      label: 'Residual Petroleum'
+    -
+      value: WND
+      label: Wind
+    -
+      value: WOC
+      label: 'Waste Coal'
+    -
+      value: WOO
+      label: 'Waste Oil'
+    -
+      value: WWW
+      label: 'Wood and Wood Waste'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,86 @@
+uuid: 59fb5458-36bf-4b1b-b369-06dbd7a38915
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.energy_produced.body
+    - field.field.node.energy_produced.field_elec_mmbtus
+    - field.field.node.energy_produced.field_elec_quantity
+    - field.field.node.energy_produced.field_mmbtu_per_unit
+    - field.field.node.energy_produced.field_netgen
+    - field.field.node.energy_produced.field_quantity
+    - field.field.node.energy_produced.field_tot_mmbtu
+    - node.type.energy_produced
+  module:
+    - text
+    - user
+id: node.energy_produced.default
+targetEntityType: node
+bundle: energy_produced
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_elec_mmbtus:
+    weight: 106
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_elec_quantity:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_mmbtu_per_unit:
+    weight: 104
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_netgen:
+    weight: 107
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_quantity:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_tot_mmbtu:
+    weight: 105
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }
