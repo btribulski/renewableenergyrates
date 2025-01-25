@@ -1,0 +1,15 @@
+id: eia923
+label: Imports data from the Dept of Energy EIA923 form
+description: Imports power plant generation data into nodes
+source_type: Excel Spreadsheet
+shared_configuration:
+  source:
+    key: default
+dependencies:
+  enforced:
+    module:
+      - migrate
+      - migrate_plus
+      - migrate_spreadsheet
+shared_configuration:
+  source:

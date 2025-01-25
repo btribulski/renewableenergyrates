@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.operator.body
     - field.field.node.operator.field_operator_id
+    - field.field.node.operator.field_operator_name
     - node.type.operator
   module:
     - path
@@ -37,6 +38,14 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_operator_name:
+    weight: 33
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   path:
     type: path
     weight: 30
@@ -50,6 +59,13 @@ content:
     weight: 15
     region: content
     third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
   sticky:
     type: boolean_checkbox
     settings:

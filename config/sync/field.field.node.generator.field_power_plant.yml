@@ -1,0 +1,28 @@
+uuid: 48abba24-5f3a-4ad0-b428-b8d355ccd4a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_power_plant
+    - node.type.generator
+    - node.type.power_plant
+id: node.generator.field_power_plant
+field_name: field_power_plant
+entity_type: node
+bundle: generator
+label: 'Power Plant'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      power_plant: power_plant
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

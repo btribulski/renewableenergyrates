@@ -1,0 +1,164 @@
+# Migration configuration for user accounts. We've described most of what goes
+# into migration configuration in migrate_plus.migration.eia923_term.yml, so won't
+# repeat that here.
+id: eia923_operator
+label: Operators that own the power plants
+migration_group: eia923
+source:
+  plugin: spreadsheet
+  # file is declared in group shared configuration
+  file: 'public://import/EIA923_Schedules_2_3_4_5_M_12_2017_27FEB2018.xlsx'
+  worksheet: 'Page 1 Generation and Fuel Data'
+  # The top-left cell where data area starts (excluding the header, if exists).
+  origin: A7
+  # The row where the header is placed, if any.
+  header_row: 6
+
+  # The list of columns to be returned. Is basically a list of table header cell
+  # values, if a header has been defined with `header_row`. If there's no table
+  # header (i.e. `header_row` is missing), it should contain a list/sequence of
+  # column letters (A, B, C, ...). If this configuration is missed, all columns
+  # that contain data will be be returned (not recommended).
+  columns:
+    - 'Plant Id'
+    - "Combined Heat And\nPower Plant"
+    - 'Nuclear Unit Id'
+    - 'Plant Name'
+    - 'Operator Name'
+    - 'Operator Id'
+    - 'Plant State'
+    - 'Census Region'
+    - 'NERC Region'
+    - Reserved
+    - 'NAICS Code'
+    - 'EIA Sector Number'
+    - 'Sector Name'
+    - "Reported\nPrime Mover"
+    - "Reported\nFuel Type Code"
+    - "AER\nFuel Type Code"
+    - Reserved2
+    - Reserved3
+    - "Physical\nUnit Label"
+    - "Quantity\nJanuary"
+    - "Quantity\nFebruary"
+    - "Quantity\nMarch"
+    - "Quantity\nApril"
+    - "Quantity\nMay"
+    - "Quantity\nJune"
+    - "Quantity\nJuly"
+    - "Quantity\nAugust"
+    - "Quantity\nSeptember"
+    - "Quantity\nOctober"
+    - "Quantity\nNovember"
+    - "Quantity\nDecember"
+    - "Elec_Quantity\nJanuary"
+    - "Elec_Quantity\nFebruary"
+    - "Elec_Quantity\nMarch"
+    - "Elec_Quantity\nApril"
+    - "Elec_Quantity\nMay"
+    - "Elec_Quantity\nJune"
+    - "Elec_Quantity\nJuly"
+    - "Elec_Quantity\nAugust"
+    - "Elec_Quantity\nSeptember"
+    - "Elec_Quantity\nOctober"
+    - "Elec_Quantity\nNovember"
+    - "Elec_Quantity\nDecember"
+    - "MMBtuPer_Unit\nJanuary"
+    - "MMBtuPer_Unit\nFebruary"
+    - "MMBtuPer_Unit\nMarch"
+    - "MMBtuPer_Unit\nApril"
+    - "MMBtuPer_Unit\nMay"
+    - "MMBtuPer_Unit\nJune"
+    - "MMBtuPer_Unit\nJuly"
+    - "MMBtuPer_Unit\nAugust"
+    - "MMBtuPer_Unit\nSeptember"
+    - "MMBtuPer_Unit\nOctober"
+    - "MMBtuPer_Unit\nNovember"
+    - "MMBtuPer_Unit\nDecember"
+    - "Tot_MMBtu\nJanuary"
+    - "Tot_MMBtu\nFebruary"
+    - "Tot_MMBtu\nMarch"
+    - "Tot_MMBtu\nApril"
+    - "Tot_MMBtu\nMay"
+    - "Tot_MMBtu\nJune"
+    - "Tot_MMBtu\nJuly"
+    - "Tot_MMBtu\nAugust"
+    - "Tot_MMBtu\nSeptember"
+    - "Tot_MMBtu\nOctober"
+    - "Tot_MMBtu\nNovember"
+    - "Tot_MMBtu\nDecember"
+    - "Elec_MMBtu\nJanuary"
+    - "Elec_MMBtu\nFebruary"
+    - "Elec_MMBtu\nMarch"
+    - "Elec_MMBtu\nApril"
+    - "Elec_MMBtu\nMay"
+    - "Elec_MMBtu\nJune"
+    - "Elec_MMBtu\nJuly"
+    - "Elec_MMBtu\nAugust"
+    - "Elec_MMBtu\nSeptember"
+    - "Elec_MMBtu\nOctober"
+    - "Elec_MMBtu\nNovember"
+    - "Elec_MMBtu\nDecember"
+    - "Netgen\nJanuary"
+    - "Netgen\nFebruary"
+    - "Netgen\nMarch"
+    - "Netgen\nApril"
+    - "Netgen\nMay"
+    - "Netgen\nJune"
+    - "Netgen\nJuly"
+    - "Netgen\nAugust"
+    - "Netgen\nSeptember"
+    - "Netgen\nOctober"
+    - "Netgen\nNovember"
+    - "Netgen\nDecember"
+    - "Total Fuel Consumption\nQuantity"
+    - "Electric Fuel Consumption\nQuantity"
+    - "Total Fuel Consumption\nMMBtu"
+    - "Elec Fuel Consumption\nMMBtu"
+    - "Net Generation\n(Megawatthours)"
+    - YEAR
+
+  # The name to be given to the column containing the row index. If this setting
+  # is specified, the source will return also a pseudo-column, with this name,
+  # containing the row index. In this example 'Row no.' can be used later in
+  # `keys` list to make this column a primary key column. This name doesn't
+  # need to be appended to the `columns` list, it will be added automatically.
+  # row_index_column: 'Row no.'
+
+  # The primary key as a list of keys. It's a list of source columns that are
+  # composing the primary key. The list is keyed by column name and has the
+  # field storage definition as value. If the table have a header (i.e.
+  # `header_row` is set) the keys will be set as the name of header cells acting
+  # as primary index. Otherwise the column letters (A, B, C, ...) can be used.
+  # If no keys are defined here, the current row position will be returned as
+  # primary key, but in this case, `row_index_column` must have a value.
+  keys:
+    'Operator Id':
+      type: integer
+      size: big
+destination:
+  plugin: entity:node
+  default_bundle: operator
+process:
+  title:
+    -
+      plugin: get
+      source: 'Operator Name'
+  field_operator_name:
+    -
+      plugin: get
+      source: 'Operator Name'
+  field_operator_id:
+    -
+      plugin: get
+      source: 'Operator Id'
+
+migration_dependencies: {}
+
+# When a module is creating a custom content type it needs to add an 
+# enforced dependency to itself, otherwise the content type will persist
+# after the module is disabled. See: https://www.drupal.org/node/2629516.
+dependencies:
+  enforced:
+    module:
+      - eia923_xlsx_import

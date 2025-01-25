@@ -24,10 +24,10 @@
         "drupal/bootstrap": "^3.6",
         "drupal/console": "^1.0.1",
         "drupal/core": "~8.0",
-        "drupal/migrate_plus": "^2.0",
+        "drupal/migrate_plus": "4.0-beta3",
         "drupal/migrate_source_csv": "^2.0",
-        "drupal/migrate_source_xls": "^1.1",
-        "drupal/migrate_tools": "^2.0",
+        "drupal/migrate_spreadsheet": "^1.0",
+        "drupal/migrate_tools": "4.0-beta3",
         "drush/drush": "~8.0",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"

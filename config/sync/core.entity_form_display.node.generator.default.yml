@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.generator.body
     - field.field.node.generator.field_aer_fuel_type
     - field.field.node.generator.field_physical_unit_label
+    - field.field.node.generator.field_power_plant
     - field.field.node.generator.field_prime_mover
     - field.field.node.generator.field_reported_fuel_type
     - node.type.generator
@@ -44,6 +45,15 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  field_power_plant:
+    weight: 122
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_prime_mover:
     weight: 32
     settings: {  }
@@ -69,6 +79,13 @@ content:
     weight: 15
     region: content
     third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
   sticky:
     type: boolean_checkbox
     settings:

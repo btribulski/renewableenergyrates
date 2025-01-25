@@ -1,0 +1,19 @@
+uuid: 48d90de0-86c8-4653-a5fa-fb8d47397ef1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_operator_name
+    - node.type.operator
+id: node.operator.field_operator_name
+field_name: field_operator_name
+entity_type: node
+bundle: operator
+label: 'Operator Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
